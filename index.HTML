@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesthee" href=".css">
+  <title></title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@800&display=swap');
+
+*{
+    margin:0px;
+ 
+}
+    body{
+        
+        background-color:black ;
+    }
+   img{
+       margin-top: 10px;
+        width:30px;
+        height:30px;
+       }
+    #cross{
+      display: block;
+      margin-top: 10px;
+      margin-left: 20px;
+      width:40px;
+      height:40px;
+      filter: invert(100%)
+    }
+    #navbar{
+        opacity: 0.9;
+        position :fixed;
+        top:0;
+        width:100%;
+        z-index:99999;
+        background-color:black;
+        
+       }
+    #menu{
+        float:right;
+        color: white;
+        background-color:black;
+        border: none;
+        
+    }
+
+
+.send{
+  height: 20px;
+}
+
+ 
+   #Logo-part2{
+    color:yellow;
+    display:inline;
+    font-family: 'Gabarito', cursive;
+    font-size:38px;
+     
+}
+   #logo-part1{
+     color:white;
+     display: inline;
+     font-family: 'Gabarito', cursive;
+     font-size:38px;
+   
+}
+#menu-forpc-toggle{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-left:40px;
+        font-size:25px;
+        float:right;
+       
+        margin-top:10px;
+}
+
+#menu-forpc-toggle:hover{
+    color: yellow;
+    text-decoration: underline;
+    font-family: 'Gabarito', cursive;
+}
+.menu-toogle:hover{
+    color:yellow;
+    
+}
+p{
+    color:white;
+}
+#text-container{
+  display: flex;
+  flex-direction:row;
+  margin-top: 210px;
+  margin-left:20px;
+}
+.sideline{
+  width: 10px;
+  height: 120px;
+   background:-webkit-linear-gradient(120deg ,#FFD700 ,#FF7400) ;
+  margin-right: 10px;
+  
+}
+#text-container h1{
+  color: white;
+  font-size: 35px;
+}
+#text-container span{
+   background:-webkit-linear-gradient(120deg, #FFD700, #FF7400);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#btn{
+    background-color:black;
+    color: white;
+    margin-left: 20px;
+    float:left;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    font-family: 'Gabarito', cursive;
+    margin-top: 28px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+#btn:hover{
+    background-color:yellow;
+    color: #000;
+    transition: background-color 0.5s,;
+    transform: 0.5s;
+    animation: glow 1s ease infinite;
+}
+
+
+
+
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+  }
+}
+
+#line{
+    width:100%;
+    height: 1px;
+    background-color: white;
+    
+}
+#-pic{
+    display :block;
+    float:right;
+    width:100vw;
+    height:100vw;
+    margin-top:50px;
+}
+
+@media(min-width:700px){
+    #-pic{
+    
+    /* width:1500px;
+    height:1000px; */
+    
+}
+
+
+.inertext{
+    margin-top: 210px;
+    margin-left:30px;
+    font-size: 40px;
+}
+}
+
+
+#whole-content{
+  margin: none;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+ 
+#info{
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background-color: black;
+  z-index: 5;
+  font-family: 'Gabarito', cursive;
+  font-size: 37px;
+  border-radius: 20px;
+}
+p{
+   background-color: black;
+   z-index: 5;
+   line-height:25px;
+   color: #A5A5A7;
+   margin-top:20px;
+}
+#about{
+ margin-left: 20px;
+ background-color: black;
+}
+
+#skills {
+  color: white;
+  display:inline;
+  margin-right: 20px;
+}
+#skills:hover{
+  text-decoration: underline;
+  color: yellow;
+}
+#exper {
+  color: white;
+  display:inline;
+  margin-right: 20px;
+}
+#exper:hover{
+  text-decoration: underline;
+  color: yellow;
+}
+@media(min-width:767px){
+     button{
+        display:none;
+    }
+    
+    #about{
+      margin-top:1000px;
+    }
+    textarea{
+      width: 600px;
+    }
+    input{
+      width: 600px;
+    }
+}
+#skills{
+  margin-top: 5px;
+}
+
+#exper {
+  margin-top: 5px;
+}
+
+#skill2{
+display: block;
+}
+.skill3{
+  display:block;
+  color: #A5A5A7;
+ margin-top: 5px;
+}
+#skill3{
+  color:yellow;
+    margin-top: 20px;
+}
+.exper3{
+  display:block;
+  color: #A5A5A7;
+  margin-top: 7px;
+ background-color:black;
+  margin-left: 0px;
+  
+}
+#exper3{
+  color:yellow;
+  margin-top: 15px;
+  margin-left: 0px;
+  background-color:black;
+  
+}
+#exper2{
+ background-color:black;
+ display: none;
+ margin-top: 5px;
+}
+
+
+
+
+.edu3{
+   margin-left: 0px;
+   color: #A5A5A7;
+   margin-top:10px;
+}
+#edu3{
+  color:yellow;
+  margin-top: 15px;
+  margin-left: 0px;
+  background-color:black;
+  
+  
+}
+#edu2{
+ background-color:black;
+ display: none;
+}
+
+
+
+
+
+
+   /* Style for the sidebar */
+   #newmenu{
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #BEBFC6D4;
+      padding-top: 20px;
+      display: none;
+      
+      
+
+
+
+    }
+
+        /* Style for the links in the sidebar */
+        #newmenu a {
+            padding: 10px 15px;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 10;
+            font-family: Gabarito;
+            backdrop-filter:blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Style for the links on hover */
+        #newmenu a:hover {
+            background-color: #555;
+        }
+         #newmenu .iconsoflinks a {
+  display: inline;
+}
+
+
+#servh2{
+  color: white;
+  font-size: 37px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+    font-family: 'Gabarito', cursive;
+}
+
+.card {
+    overflow: auto;
+    background-color: #2B2B2B;
+    border: 1px solid #444;
+    border-radius: 10px;
+    width : 300px;
+    height: 250px;
+    margin: 20px;
+    display:inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.card:hover{
+  background-color:#F4CF0AEB;
+  transition: background-color 0.5s, transform 0.5s;
+  transform: translateY(-10px);
+
+}
+.card-content {
+    padding: 20px;
+
+}
+.card-content h2{
+  color: white;
+  margin-bottom: 10px;
+}
+.card p1{
+  color: #A5A5A7;
+  line-height: 25px;
+}
+
+.blogW{
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+      margin-left: 20px;
+}
+#copy{
+  filter: invert(100%);
+
+}
+#services{
+  display :flex;
+  justify-content: center;
+  background-color: black;
+}
+#contact-left{
+  display: inline-block;
+  color:white;
+  margin-top: 50px;
+}
+#contact-left h2{
+  font-size: 37px;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: 'Gabarito', cursive;
+}
+#contact-left h3{
+  display: inline-block;
+   margin-bottom: 15px;
+  font-family: 'Gabarito', cursive;
+}
+.contact-right{
+  margin-top: 50px;
+  float: right;
+  background-color: black;
+}
+#form-right{ 
+  display:block;
+  float: right;
+}
+input{
+  border: 2px solid yellow;
+  border-radius: 5px;
+  color: white;
+  margin-bottom:15px;
+  width: 290px;
+  height: 50px;
+  background-color: #2B2B2B;
+}
+input:hover{
+  border:5px yellow;
+}
+textarea{
+  width: 290px;
+  height: 200px;
+  border: 2px solid yellow;
+  border-radius:10px;
+  background-color: #2B2B2B;
+  color: white;
+}
+#submit{
+  display: block;
+  margin:10px;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  color:white;
+  width:110px;
+  padding: 10px;
+  background-color:black;
+  font-family: 'Gabarito', cursive;
+  margin-bottom: 20px;
+}
+.iconsoflinks{
+  margin-top: 30px;
+}
+#facebook{
+  width:60px;
+}
+#wattsapp{
+  width:40px;
+}
+#submit:hover{
+  background-color: yellow;
+  color:black;
+  
+}
+
+
+.footer {
+      display: flex;
+      flex-flow:column;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 10px;         
+      width: 100%;
+        }
+    
+
+@media (min-width:767px) {
+  textarea{
+    width:600px;
+  }
+  input{
+    width:600px;
+  }
+}
+
+ @media(max-width:767px){
+     #menu-forpc-toggle{
+ 
+         display: none;
+         
+     } 
+    .card{
+      display:block;
+   
+
+    }
+    #services{
+      display: inline;
+    }
+   
+   }
+   
+
+
+</style>
+<body>
+    <nav id="navbar">
+    <!-- //////////Logo\\\\\\\\\\ -->
+    
+    <Logo>
+        <logo2>
+       <h1 id="logo-part1"> Lexi</h1> 
+       <h1 id="Logo-part2">Verse</h1>
+         </logo2>
+         
+
+    
+    <!-- //////////Menu_for_pnc\\\\\\\\\\ -->
+    
+        <a href="#"id="menu-forpc-toggle" display="none">Services</a>
+        <a href="#"id="menu-forpc-toggle" display="none">Contact Us</a>
+        <a href="#about-us"id="menu-forpc-toggle" display="none">About Us</a>
+        <a href="#"id="menu-forpc-toggle" display="none">Home</a>
+    </div>
+   
+    </logo>
+    <!-- //////////Humburger\\\\\\\\\\ -->
+    
+  <button id="menu">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg=="  alt="">
+      </button>
+  
+  
+  
+  
+  <!-- //////////Menu_for_Short_width_device\\\\\\\\\\ -->
+
+
+   <div id="line"></div>
+   
+    <div id="newmenu" text="black">
+      <img id="cross"src="/logo9_15_125250.png" alt="">
+    <a href="#Home" class="items">Home</a>
+    <a href="#Contact" class="items">Contact Us</a>
+    <a href="#about-us" class="items">About Us</a>
+    <a href="#services" class="items">Our Services</a>
+     
+     
+     <div class="iconsoflinks">
+  <a href="#"> <img src="/20231023_144412.png" alt=""></a>
+  <a href="#"> <img src="/20231023_145157.png" alt="" id="facebook"></a>
+  <a href="#"> <img src="/20231025_124532.png" alt="" id="wattsapp"> </a>
+  </div>
+</div>
+ </nav>
+   
+   <div id="text-container">
+     <div class="sideline"></div>
+     <h1>Unlock the power
+     <br>
+       <span>
+        Of words : your
+       </span>
+     <br>
+        Content writer
+   </div>
+  
+ 
+   
+   
+     <button id="btn">
+         Access Services
+      </button>
+    <div>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.Iq-Mh47p1W3divE7kEJPDQHaFi&pid=Api&P=0&h=220" id="-pic">
+     </div>
+  <div id="whole-content">
+     <a name="about-us">
+       <div id="whole-about">
+
+  
+       <div id="about">
+     
+     
+<div id="other">
+     <h1 id="info">About Me</h1>
+     
+     <p> A content writer is a skilled professional responsible for creating written material for various platforms, such as websites, blogs, social media, and more. Content writers possess strong writing and research skills, a deep understanding of SEO, and the ability to adapt their style to suit different audiences and industries. They play a crucial role in conveying a brand's message and helping it connect with its audience in a meaningful way.
+</p>
+<h4 id="skills">Skills</h4>
+<h4 id="exper">Experience</h4>
+
+
+
+
+
+<div id="skill2">
+  
+  
+  
+  <div class="skill3" id="skill3">Content Writing</div>
+  <div class="skill3">Write articles for any format</div>
+  <div class="skill3" id="skill3">Google dox</div>
+  <div class="skill3">Expert of Google dox and Word</div>
+  <div class="skill3" id="skill3">Palagrium</div>
+  <div class="skill3">Get Your plagrisum free articles</div>
+  
+  
+  
+</div>
+
+<div class="wholeabout-all">
+
+
+
+<div id="exper2">
+  
+  
+  
+  <div class="exper3" id="exper3">2018</div>
+  <div class="exper3">Freelanceing Course </div>
+  <div class="exper3" id="exper3">2019</div>
+  <div class="exper3">1st Projects from instagram</div>
+  <div class="exper3" id="exper3">2019</div>
+  <div class="exper3">Became a partner of website for content writer 
+  4years of experience</div>
+  
+     </div>
+   </div>
+ 
+  </div>
+   <h2 id="servh2">Services</h2>
+  <div id="services">
+   
+ <div class="card">
+    <img src="/20231020_205414.png" class="blogW">
+       <div class="card-content">
+         <h2>Blog Writing</h2>
+         <p1>pellentesque splendide ubique habitant reprehendunt indoctum brute maecenas fugit quisque pri dolorum discere .</p1>
+       </div>
+     </div>
+     
+     <div class="card">
+     <img src="/20231020_225657.png" class="blogW" id="copy">
+     
+    <div class="card-content">
+        <h2>Website Content</h2>
+        <p1>pellentesque splendide ubique habitant reprehendunt indoctum brute maecenas fugit quisque pri dolorum discere.</p1>
+    </div>
+</div>
+
+<div class="card">
+     <img src="/20231021_203847.png" class="blogW">
+    <div class="card-content">
+        <h2>Card Title 3</h2>
+        <p1>pellentesque splendide ubique habitant reprehendunt indoctum brute maecenas fugit quisque pri dolorum discere .</p1>
+    </div>
+</div>
+</div>
+<br>
+<a name="Contact"></a>
+<div id="contact-left">
+    <h2>Contact Us</h2>
+    <br>
+  <h3><img src="/20231022_151531.png" alt="" class="send">lexiverse19@gmail.com</h3>
+   <br>
+    <h3> <img src="/20231022_152831.png" alt="">03226221911</h3>
+    <br>
+       <div class="iconsoflinks">
+   <a href="#"> <img src="/20231023_144412.png" alt=""></a>
+  <a href="#"> <img src="/20231023_145157.png" alt="" id="facebook"></a>
+  <a href="#"> <img src="/20231025_123632.png" alt="" id="wattsapp"> </a>
+       </div>
+</div>
+
+<div class="contact-right">
+  <form id="form-right" onsubmit="sendEmail(); reset(); return false;"> 
+  <input type="text" name="Name" placeholder="Your Name" required>
+  <br>
+   <input id="email" type="email" name="email" placeholder="Your Email" required>
+   <br>
+   <textarea name="Message" rows="6" placeholder="Your Message"id="body"></textarea>
+   <br>
+   <button type="submit" id="submit">Submit</button> 
+   
+   </form>
+   </div>
+   </div>
+ 
+   
+    <div class="footer">
+      <hr>
+      <p>Developed by Ahmad Saleem</p>
+      <p>&copy; Copyright all right are reserved</p>
+    </div>
+ </div>
+   
+  <script src=".js"> 
+       document.getElementById("newmenu");
+document.getElementById('menu').onclick = function game() {
+  if (newmenu.style.display != "none") {
+    newmenu.style.display = "none"
+  }
+  else {
+    newmenu.style.display = "block"
+  }
+  
+}
+document.getElementById('cross')
+cross.onclick = function cros() {
+   newmenu.style.display = "none"
+}
+  
+
+document.getElementById('skills')
+document.getElementById('exper')
+document.getElementById('skill2')
+document.getElementById('exper2')
+
+
+
+ exper.onclick = function about() {
+ exper2.style.display='block';
+ skill2.style.display='none';
+ }
+ skills.onclick =function about(){
+ exper2.style.display='none';
+ skill2.style.display='block';
+  
+
+   }
+   
+
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+     function sendEmail () {
+       Email.send({
+        SecureToken:'e3005be1-eae6-48db-be29-7a2a2080544f',
+         To:'amuhammadsaleem429@gmail.com',
+         From: document.getElementById('email').value,
+         Subject: "A new clint",
+         Body:document.getElementById('body').value,
+       }).then(
+         message => {
+ 
+            alert(message)
+           
+         }
+       );
+     }
+ </script>
+</body>
+
+</body>
+</html>
+
+
